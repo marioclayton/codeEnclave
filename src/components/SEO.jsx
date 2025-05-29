@@ -1,12 +1,13 @@
+'use client'
+
 import React from 'react'
-import {motion} from 'framer-motion';
-import {Link} from 'react-router-dom';
+import Link from 'next/link'
 
 const SEO = () => {
   return (
     <div className='w-full bg-black text-white'>
       <div className='max-w-[1240px] mx-auto'>
-        <motion.div initial={{y:200, opacity:0}} whileInView={{ y: 0, opacity:1 }} transition={{duration:0.8, delay:0.2}} className='py-16 px-4 flex flex-col justify-center'>
+        <div className='py-16 px-4 flex flex-col justify-center animate-fade-in-up'>
           <h1 className='md:text-3xl sm:text-2xl text-3xl  py-2'>How SEO Gives Your Business an Edge Online</h1>
           <p className='py-4'>
             In the vast digital marketplace, standing out is no easy task. With countless competitors vying for attention, your business needs every advantage it can get to capture and retain customers. Search Engine Optimization (SEO) is one of the most powerful tools in the digital marketing arsenal, helping businesses cut through the noise and secure a prominent position in search engine results. Here’s how SEO can give your business the competitive edge it needs online.
@@ -89,15 +90,15 @@ const SEO = () => {
           <p className='py-4'>
             If you have any questions or concerns about how we can help you grow your business by designing your next website, please contact us today!
           </p>
-          <div className='m-auto'>
-            <button className='bg-white text-black w-[150px] rounded-md font-medium mr-3 mx-auto py-3 mt-16'>
-              <Link to='/ContactUs' className='text-l p-4'>Contact Us</Link>
-            </button>
-            <button className='bg-white text-black w-[150px] rounded-md font-medium ml-3 mx-auto py-3'>
-              <Link to='/Services' className='text-l p-4'>Get Started</Link>
-            </button>
+          <div className='m-auto flex flex-col sm:flex-row gap-4 mt-8'>
+            <Link href='/ContactUs' className='bg-white text-black w-[150px] rounded-md font-medium py-3 text-center'>
+              Contact Us
+            </Link>
+            <Link href='/Services' className='bg-white text-black w-[150px] rounded-md font-medium py-3 text-center'>
+              Get Started
+            </Link>
           </div>
-        </motion.div>
+        </div>
       </div>
     </div>
   )

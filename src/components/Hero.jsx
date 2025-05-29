@@ -1,17 +1,12 @@
 'use client'
 
 import React from 'react';
-import {motion} from 'framer-motion';
-import {Link} from 'react-router-dom';
+import Link from 'next/link';
 
 const Hero = () => {
   return (
-
-    
-
-
     <div className='text-white overlay-container '>
-      <motion.div initial={{x:-0, opacity:0}} whileInView={{ x: 0, opacity:1 }} transition={{duration:1.5, delay:0.8}} viewport={{ once: false, amount: 0.5 }}  className='max-w-[800px] mt-[-96px] w-full h-screen mx-auto text-center flex flex-col justify-center overlay-content'>
+      <div className='max-w-[800px] mt-[-90px] w-full h-screen mx-auto text-center flex flex-col justify-center overlay-content animate-fade-in-up'>
         <p className='bg-gradient-to-r from-green-300 via-white to-green-500 bg-clip-text text-xl tracking-tight text-transparent  p-2'>
           GROWING YOUR BUSINESS IN THE ONLINE WORLD
         </p>
@@ -24,11 +19,10 @@ const Hero = () => {
           </p>
         </div>
         <p className='md:text-2xl text-xl  bg-gradient-to-r from-green-300 via-white to-green-500 bg-clip-text tracking-tight text-transparent py-10'>We specialize in helping small and medium-sized businesses establish a strong and effective online presence.</p>
-        <button className='animate-pulse bg-[#ffffff] w-[200px] rounded-md font-medium my-6 mx-auto text-xl py-3 text-black'>
-          
-          <Link to='/Services' className='text-l p-4'>Get Started</Link>
-        </button>
-      </motion.div>
+        <Link href='/Services' className='animate-pulse bg-[#ffffff] w-[200px] rounded-md font-medium my-6 mx-auto text-xl py-3 text-black text-center flex items-center justify-center'>
+          Get Started
+        </Link>
+      </div>
     </div>
   );
 };

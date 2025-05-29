@@ -1,18 +1,19 @@
+'use client'
+
 import React from 'react'
-import {motion} from 'framer-motion';
-import {Link} from 'react-router-dom';
+import Link from 'next/link'
 
 const Privacy = () => {
   return (
     <div className='w-full bg-black text-white'>
       <div className='max-w-[1240px] mx-auto'>
-        <motion.div initial={{y:200, opacity:0}} whileInView={{ y: 0, opacity:1 }} transition={{duration:0.8, delay:0.2}} className='py-16 px-4 flex flex-col justify-center'>
+        <div className='py-16 px-4 flex flex-col justify-center animate-fade-in-up'>
           <h1 className='md:text-3xl sm:text-2xl text-3xl  py-2'>Privacy Policy</h1>
           <p className='py-2'>
             At Code Enclave LLC, we respect your privacy and are committed to protecting the personal information you share with us. This Privacy Policy explains how we collect, use, and safeguard your data when you visit our website or engage with our services. By using our website, you consent to the data practices described in this policy.
           </p>
           <h3 className='text-2xl sm:text-xl pt-2'>
-            Information We Collect 
+            Information We Collect
           </h3>
           <p className='py-4'>
             We may collect the following types of personal information when you visit our website or engage with our services:
@@ -21,7 +22,7 @@ const Privacy = () => {
             Personal Identification Information: This may include your name, email address, phone number, or other contact details that you provide when filling out forms, subscribing to our newsletter, or contacting us directly.
           </p>
           <p className='pl-6 pb-4'>
-            Website Usage Data: We may collect non-personal information regarding your interaction with our website, such as IP address, browser type, operating system, pages visited, and time spent on the site. This information helps us analyze trends, administer the website, and improve user experience.  
+            Website Usage Data: We may collect non-personal information regarding your interaction with our website, such as IP address, browser type, operating system, pages visited, and time spent on the site. This information helps us analyze trends, administer the website, and improve user experience.
           </p>
           <h3 className='text-2xl sm:text-xl pt-2'>
             How We Use Your Information
@@ -87,7 +88,7 @@ const Privacy = () => {
             Changes to This Privacy Policy
           </h3>
           <p className='py-4'>
-            We reserve the right to update or modify this Privacy Policy at any time. Any changes will be posted on this page with an updated "Effective Date" at the top of the page. We encourage you to review this policy periodically to stay informed about how we are protecting your information.   
+            We reserve the right to update or modify this Privacy Policy at any time. Any changes will be posted on this page with an updated "Effective Date" at the top of the page. We encourage you to review this policy periodically to stay informed about how we are protecting your information.
           </p>
           <h3 className='text-2xl sm:text-xl pt-2'>
             Contact Us
@@ -95,15 +96,15 @@ const Privacy = () => {
           <p className='py-4'>
             If you have any questions or concerns about this Privacy Policy or how we handle your personal information, please contact us today!
           </p>
-          <div className='m-auto'>
-            <button className='bg-white text-black w-[150px] rounded-md font-medium mr-3 mx-auto py-3'>
-              <Link to='/ContactUs' className='text-l p-4'>Contact Us</Link>
-            </button>
-            <button className='bg-white text-black w-[150px] rounded-md font-medium ml-3 mx-auto py-3'>
-              <Link to='/Services' className='text-l p-4'>Get Started</Link>
-            </button>
+          <div className='m-auto flex flex-col sm:flex-row gap-4'>
+            <Link href='/ContactUs' className='bg-white text-black w-[150px] rounded-md font-medium mx-auto py-3 text-center'>
+              Contact Us
+            </Link>
+            <Link href='/Services' className='bg-white text-black w-[150px] rounded-md font-medium mx-auto py-3 text-center'>
+              Get Started
+            </Link>
           </div>
-        </motion.div>
+        </div>
       </div>
     </div>
   )

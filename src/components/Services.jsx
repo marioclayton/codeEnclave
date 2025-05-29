@@ -1,26 +1,22 @@
 'use client'
 
 import React from 'react';
-import {motion} from 'framer-motion';
-import {Link} from 'react-router-dom';
- 
+import Link from 'next/link';
+
 const Analytics = () => {
   return (
     <div className='w-full bg-white '>
       <div className='mx-auto grid lg:grid-cols-2'>
-      <div className='bg-[url(/assets/ServicesBackground1.png)] text-white bg-cover bg-scroll md:bg-fixed h-screen lg:h-auto justify-items-end'>
-      <motion.div initial={{x:0, opacity:0}} whileInView={{ x: 0, opacity:1 }}  transition={{duration:1.0, delay:0.2}} viewport={{ once: false, amount: 0.1 }} className='mx-16 content-center h-full lg:max-w-2xl '>
-          <h1 className='md:text-4xl sm:text-3xl text-4xl  py-10'>Learn about our services</h1>
-          <p className='md:text-xl sm:text-xl text-xl py-2'>
-            At Code Enclave LLC, we specialize in creating modern, user-friendly websites tailored to the unique needs of small to medium-sized businesses. Whether you're looking to update an existing site or need a brand-new online presence, our team is here to help you stand out in a digital world.          
-          </p>
-          
-        
-        </motion.div>
+        <div className='bg-[url(/assets/ServicesBackground1.webp)] text-white bg-cover bg-scroll md:bg-fixed h-screen lg:h-auto justify-items-end'>
+          <div className='mx-16 content-center h-full lg:max-w-2xl animate-fade-in-up'>
+            <h1 className='md:text-4xl sm:text-3xl text-4xl  py-10'>Learn about our services</h1>
+            <p className='md:text-xl sm:text-xl text-xl py-2'>
+              At Code Enclave LLC, we specialize in creating modern, user-friendly websites tailored to the unique needs of small to medium-sized businesses. Whether you're looking to update an existing site or need a brand-new online presence, our team is here to help you stand out in a digital world.          
+            </p>
+          </div>
         </div>
         <div className='md:m-16 m-8'>
-        <motion.div initial={{x:0, opacity:0}} whileInView={{ x: 0, opacity:1 }}  transition={{duration:1.0, delay:0.2}} viewport={{ once: false, amount: 0.1 }} className='text-justify lg:max-w-2xl py-16 px-4 flex flex-col justify-left'>
-            
+          <div className='text-justify lg:max-w-2xl py-16 px-4 flex flex-col justify-left animate-fade-in-up'>
             <p className=' text-3xl font-extrabold leading-tight tracking-tight sm:text-4xl max-w-2xl mx-auto text-center pb-16'>
               Our Services Include
             </p>
@@ -48,16 +44,16 @@ const Analytics = () => {
             <p className='py-6 font-bold text-center pb-10'>
               Ready to get started? Contact us today!
             </p>
-            <div className='m-auto'>
-              <button className='bg-black text-white w-[150px] rounded-md font-medium mr-3 mx-auto py-3'>
-                <Link to='/ContactUs' className='text-l p-4'>Contact Us</Link>
-              </button>
-              <button className='bg-black text-white w-[150px] rounded-md font-medium ml-3 mx-auto py-3'>
-                <Link to='/Quote' className='text-l p-4'>Get Started</Link>
-              </button>
+            <div className='m-auto flex flex-col sm:flex-row gap-4'>
+              <Link href='/ContactUs' className='bg-black text-white w-[150px] rounded-md font-medium mx-auto py-3 text-center'>
+                Contact Us
+              </Link>
+              <Link href='/Quote' className='bg-black text-white w-[150px] rounded-md font-medium mx-auto py-3 text-center'>
+                Get Started
+              </Link>
             </div>
-          </motion.div>
-      </div>
+          </div>
+        </div>
       </div>
     </div>
   );

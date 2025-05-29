@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://codeenclave.com
+
+# Sitemaps
+Sitemap: https://codeenclave.com/sitemap.xml
