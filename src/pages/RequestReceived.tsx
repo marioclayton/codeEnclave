@@ -1,25 +1,24 @@
 import React from "react";
+import Head from 'next/head';
 import RequestReceived from '../components/RequestReceived';
-
-
-
-export const metadata = {
-  title: 'We received your request | Code Enclave',
-  description: 'We received your request.',
-  keywords: ['request', 'received'],
-  openGraph: {
-    title: 'Branding & Logo Design Services',
-    description: 'We received your request.',
-    url: 'https://codeenclave.com/RequestReceived',
-    siteName: 'Code Enclave',
-    type: 'website',
-  },
-};
 
 export default function Page() {
   return (
-    <div>
-      <RequestReceived />
-    </div>
+    <>
+      <Head>
+        <title>We received your request | Code Enclave</title>
+        <meta name="description" content="We received your request." />
+        <meta name="keywords" content="request, received" />
+        {/* Open Graph tags */}
+        <meta property="og:title" content="We received your request | Code Enclave" />
+        <meta property="og:description" content="We received your request." />
+        <meta property="og:url" content="https://codeenclave.com/RequestReceived" />
+        <meta property="og:site_name" content="Code Enclave" />
+        <meta property="og:type" content="website" />
+      </Head>
+      <div>
+        <RequestReceived />
+      </div>
+    </>
   );
-};
+}

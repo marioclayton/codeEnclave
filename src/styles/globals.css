@@ -1,18 +1,9 @@
 @import "tailwindcss";
 
-@font-face {
-  font-family: "myfont";
-  src: url("/assets/Consolas.woff") format("woff");
-}
 
-@font-face {
-  font-family: "myfont";
-  src: url("/assets/Consolas-Bold.woff") format("woff");
-  font-weight: bold;
-}
 
 html, body {
-  font-family: 'Fira Mono', Consolas, 'Courier New', monospace;
+  font-family: 'Courier New', Courier, monospace;
   background-color: #000000;
   font-size: 15px;
   font-style: normal;
@@ -24,7 +15,7 @@ html, body {
 body {
   --toastify-color-light: #000000;
   --toastify-text-color-light: #ffffff;
-  --toastify-font-family: myfont;
+  --toastify-font-family: 'Courier New', Courier, monospace;
   --toastify-font-size: 15px;
   --toastify-font-style: normal;
   --toastify-font-variant: normal;
@@ -39,10 +30,6 @@ body {
     #ffffff
   );
 }
-
-
-
-
 
 @layer utilities {
   .animate-fade-in-up {

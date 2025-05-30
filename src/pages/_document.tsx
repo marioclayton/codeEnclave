@@ -2,14 +2,12 @@ import { Html, Head, Main, NextScript } from 'next/document';
 
 export default function Document() {
   return (
-    <Html lang="en" style={{ fontFamily: "'Fira Mono', Consolas, 'Courier New', monospace" }}>
+    <Html lang="en">
       <Head>
+        <title>Code Enclave LLC</title>
+        <meta name="description" content="Helping small and medium-sized businesses establish a strong and effective online presence." />
         <link rel="icon" href="/favicon.svg" />
-        <link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;700&display=swap" rel="stylesheet" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-
-
+        <link rel="preload" as="image" href="/assets/bgimage.webp" />
       </Head>
       <body className="antialiased">
         <Main />
