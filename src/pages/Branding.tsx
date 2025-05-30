@@ -2,6 +2,7 @@ import React from "react";
 import Head from 'next/head';
 import Branding from '../components/Branding';
 
+
 export default function Page() {
   return (
     <>
