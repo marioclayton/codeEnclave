@@ -18,7 +18,7 @@ const Hero = () => {
     >
       <div className="max-w-[800px] w-full mx-auto text-center flex flex-col justify-center items-center animate-fade-in-up relative z-10 text-white">
         <p className="bg-gradient-to-r from-green-300 via-white to-green-500 bg-clip-text text-xl tracking-tight text-transparent p-2">
-          GROWING YOUR BUSINESS IN THE ONLINE WORLD
+          Growing Your Business in the Online World
         </p>
         <h1 className="md:text-5xl sm:text-4xl text-3xl md:py-6">
           Code Enclave LLC

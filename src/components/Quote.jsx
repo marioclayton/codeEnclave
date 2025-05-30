@@ -97,7 +97,16 @@ const Quote = () => {
               onChange={handleInputChange} name='message' id="message" rows="6" className="block p-2.5 w-full text-sm bg-gray-50 rounded-lg shadow-sm border  border-gray-600 placeholder-gray-400 text-black focus:ring-primary-500 focus:border-primary-500" placeholder="Leave a comment..."></textarea>
         </div>
         <div className='w-full flex'>
-          <button disabled={isSubmitting} type="submit" value="Send" className=" mx-auto py-3 px-5 text-sm font-medium text-center text-white rounded-lg  sm:w-fit  focus:ring-4 focus:outline-none focus:ring-white-300 bg-gray-600 hover:bg-gray-700 focus:ring-primary-800">Request</button>
+          <button
+  disabled={isSubmitting}
+  type="submit"
+  value="Send"
+  className="mx-auto py-3 px-5 text-sm font-medium text-center text-white rounded-lg sm:w-fit focus:ring-4 focus:outline-none focus:ring-white-300 bg-gray-600 hover:bg-gray-700 focus:ring-primary-800"
+  aria-busy={isSubmitting ? "true" : "false"}
+  aria-label={isSubmitting ? "Sending request" : "Request a quote"}
+>
+  {isSubmitting ? "Sending..." : "Request"}
+</button>
         </div>
         
       </form>

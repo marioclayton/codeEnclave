@@ -81,8 +81,16 @@ const ContactUs = () => {
                         ></textarea>
                     </div>
                     <div className='w-full flex'>
-                        <button disabled={isSubmitting} type="submit" value="Send" className="mx-auto py-3 px-5 text-sm font-medium text-center text-white rounded-lg  sm:w-fit  focus:ring-4 focus:outline-none focus:ring-white-300 bg-gray-600 hover:bg-gray-700 focus:ring-primary-800">
-                            Send Message</button>
+                        <button
+                            disabled={isSubmitting}
+                            type="submit"
+                            value="Send"
+                            className="mx-auto py-3 px-5 text-sm font-medium text-center text-white rounded-lg sm:w-fit focus:ring-4 focus:outline-none focus:ring-white-300 bg-gray-600 hover:bg-gray-700 focus:ring-primary-800"
+                            aria-busy={isSubmitting ? "true" : "false"}
+                            aria-label={isSubmitting ? "Sending message" : "Send message"}
+                        >
+                            {isSubmitting ? "Sending..." : "Send Message"}
+                        </button>
                     </div>
                 </form>
                 {loading && (

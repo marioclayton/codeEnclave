@@ -76,19 +76,23 @@ const Portfolio = () => {
                             ))}
                             {/* Left Button */}
                             <button
-                                className="bg-gray-800 text-white p-2  m-16 rounded-full shadow-md disabled:opacity-50"
+                                className="bg-gray-800 text-white p-2 m-16 rounded-full shadow-md disabled:opacity-50 focus:outline-none focus:ring-2 focus:ring-white"
                                 onClick={prevPage}
                                 disabled={currentIndex === 0}
+                                aria-label="Previous projects"
+                                aria-disabled={currentIndex === 0}
                             >
-                                <ChevronLeft size={24} />
+                                <ChevronLeft size={24} aria-hidden="true" />
                             </button>
                             {/* Right Button */}
                             <button
-                                className="bg-gray-800 text-white p-2 m-16 rounded-full shadow-md disabled:opacity-50"
+                                className="bg-gray-800 text-white p-2 m-16 rounded-full shadow-md disabled:opacity-50 focus:outline-none focus:ring-2 focus:ring-white"
                                 onClick={nextPage}
                                 disabled={currentIndex + itemsPerPage >= Projects.length}
+                                aria-label="Next projects"
+                                aria-disabled={currentIndex + itemsPerPage >= Projects.length}
                             >
-                                <ChevronRight size={24} />
+                                <ChevronRight size={24} aria-hidden="true" />
                             </button>
                         </div>
                     </div>
