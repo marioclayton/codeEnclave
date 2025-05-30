@@ -21,7 +21,7 @@ const Hero = () => {
           Growing Your Business in the Online World
         </p>
         <h1 className="md:text-5xl sm:text-4xl text-3xl md:py-6">
-          Code Enclave LLC
+          &lt; Code Enclave /&gt;
         </h1>
         <div className="flex justify-center items-center">
           <p className="md:text-3xl sm:text-3xl text-xl py-4">
