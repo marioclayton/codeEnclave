@@ -37,14 +37,16 @@ const Navbar = () => {
         />
         <ul className='hidden md:flex'>
           {navLinks.map(({ href, label }) => (
-            <Link
-              key={href}
-              href={href}
-              className='text-l p-4'
-              style={isActive(href) ? { color: '#86efac' } : {}}
-            >
-              {label}
-            </Link>
+            <li key={href}>
+              <Link
+                href={href}
+                className='text-l p-4'
+                style={isActive(href) ? { color: '#86efac' } : {}}
+                aria-current={isActive(href) ? "page" : undefined}
+              >
+                {label}
+              </Link>
+            </li>
           ))}
         </ul>
         <div onClick={handleNav} className='block md:hidden'>
@@ -62,14 +64,16 @@ const Navbar = () => {
           />
           <ul className='uppercase p-4'>
             {navLinks.map(({ href, label }) => (
-              <Link
-                key={href}
-                href={href}
-                className='grid text-l p-4 border-b border-gray-600'
-                style={isActive(href) ? { color: '#86efac' } : {}}
-              >
-                {label}
-              </Link>
+              <li key={href} className='border-b border-gray-600'>
+                <Link
+                  href={href}
+                  className='grid text-l p-4'
+                  style={isActive(href) ? { color: '#86efac' } : {}}
+                  aria-current={isActive(href) ? "page" : undefined}
+                >
+                  {label}
+                </Link>
+              </li>
             ))}
           </ul>
         </div>

@@ -53,7 +53,7 @@ const ContactUs = () => {
     return (
         <div className="w-full bg-black py-16 px-4 animate-fade-in-up">
             <div className="py-8 lg:py-16 md:px-20 lg:px-4 mx-auto max-w-screen-md ">
-                <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-white">Contact Us</h2>
+                <h1 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-white">Contact Us</h1>
                 <p className="mb-8 lg:mb-16 font-light text-center text-gray-400 sm:text-xl">Got a technical issue? Want to send feedback about a beta feature? Need details about our Business plan? Let us know.</p>
                 <form onSubmit={handleSubmit} className="space-y-8 mb-14">
                     <div>

@@ -12,9 +12,9 @@ const Privacy = () => {
           <p className='py-2'>
             At Code Enclave LLC, we respect your privacy and are committed to protecting the personal information you share with us. This Privacy Policy explains how we collect, use, and safeguard your data when you visit our website or engage with our services. By using our website, you consent to the data practices described in this policy.
           </p>
-          <h3 className='text-2xl sm:text-xl pt-2'>
+          <h2 className='text-2xl sm:text-xl pt-2'>
             Information We Collect
-          </h3>
+          </h2>
           <p className='py-4'>
             We may collect the following types of personal information when you visit our website or engage with our services:
           </p>
@@ -24,9 +24,9 @@ const Privacy = () => {
           <p className='pl-6 pb-4'>
             Website Usage Data: We may collect non-personal information regarding your interaction with our website, such as IP address, browser type, operating system, pages visited, and time spent on the site. This information helps us analyze trends, administer the website, and improve user experience.
           </p>
-          <h3 className='text-2xl sm:text-xl pt-2'>
+          <h2 className='text-2xl sm:text-xl pt-2'>
             How We Use Your Information
-          </h3>
+          </h2>
           <p className='py-4'>
             We may use your personal information in the following ways:
           </p>
@@ -42,30 +42,30 @@ const Privacy = () => {
           <p className='pl-6 pb-4'>
             To comply with legal obligations or enforce our website’s terms and conditions.
           </p>
-          <h3 className='text-2xl sm:text-xl pt-2'>
+          <h2 className='text-2xl sm:text-xl pt-2'>
             Sharing Your Information
-          </h3>
+          </h2>
           <p className='py-4'>
             We do not sell, rent, or lease your personal information to third parties. However, we may share your information with trusted third-party service providers to perform functions on our behalf, such as hosting services, email delivery, or analytics. These providers are required to use your information solely for the purpose of providing services to us and must keep it confidential.
           </p>
           <p className='py-4'>
             We may also disclose personal information if required by law or in response to legal processes, such as subpoenas, court orders, or government requests.
           </p>
-          <h3 className='text-2xl sm:text-xl pt-2'>
+          <h2 className='text-2xl sm:text-xl pt-2'>
             Data Security
-          </h3>
+          </h2>
           <p className='py-4'>
             We take reasonable steps to protect your personal information from unauthorized access, alteration, disclosure, or destruction. While we strive to use commercially acceptable means to protect your data, please remember that no method of transmission over the internet or electronic storage is completely secure, and we cannot guarantee the absolute security of your information.
           </p>
-          <h3 className='text-2xl sm:text-xl pt-2'>
+          <h2 className='text-2xl sm:text-xl pt-2'>
             Cookies and Tracking Technologies
-          </h3>
+          </h2>
           <p className='py-4'>
             Our website may use cookies or other tracking technologies to enhance user experience. Cookies are small files that are placed on your device to collect information about your browsing habits. You can set your browser to refuse cookies or alert you when cookies are being sent, but note that some parts of the website may not function properly if cookies are disabled.
           </p>
-          <h3 className='text-2xl sm:text-xl pt-2'>
+          <h2 className='text-2xl sm:text-xl pt-2'>
             Your Rights and Choices
-          </h3>
+          </h2>
           <p className='py-4'>
             You have the right to:
           </p>
@@ -78,21 +78,21 @@ const Privacy = () => {
           <p className='pl-6 pb-4'>
             Request that we delete your personal information, subject to certain legal exceptions.
           </p>
-          <h3 className='text-2xl sm:text-xl pt-2'>
+          <h2 className='text-2xl sm:text-xl pt-2'>
             Third-Party Links
-          </h3>
+          </h2>
           <p className='py-4'>
             Our website may contain links to third-party websites. Please note that we are not responsible for the privacy practices or content of these external sites. We encourage you to review their privacy policies before providing any personal information.
           </p>
-          <h3 className='text-2xl sm:text-xl pt-2'>
+          <h2 className='text-2xl sm:text-xl pt-2'>
             Changes to This Privacy Policy
-          </h3>
+          </h2>
           <p className='py-4'>
             We reserve the right to update or modify this Privacy Policy at any time. Any changes will be posted on this page with an updated "Effective Date" at the top of the page. We encourage you to review this policy periodically to stay informed about how we are protecting your information.
           </p>
-          <h3 className='text-2xl sm:text-xl pt-2'>
+          <h2 className='text-2xl sm:text-xl pt-2'>
             Contact Us
-          </h3>
+          </h2>
           <p className='py-4'>
             If you have any questions or concerns about this Privacy Policy or how we handle your personal information, please contact us today!
           </p>

@@ -20,7 +20,7 @@ const Footer = () => {
       </div>
       <div className='lg:col-span-2 flex justify-between mt-6'>
         <div>
-          <h6 className='font-medium text-gray-400'>Solutions</h6>
+          <h1 className='font-medium text-gray-400'>Solutions</h1>
           <ul>
             <li className='py-2 text-sm'><Link href='/WebDev'>Web Development</Link></li>
             <li className='py-2 text-sm'><Link href='/SEO'>SEO</Link></li>
@@ -28,7 +28,7 @@ const Footer = () => {
           </ul>
         </div>
         <div>
-          <h6 className='font-medium text-gray-400'>Support</h6>
+          <h1 className='font-medium text-gray-400'>Support</h1>
           <ul>
             <li className='py-2 text-sm'><Link href='/Services'>Pricing</Link></li>
             <li className='py-2 text-sm'><Link href='/ContactUs'>Contact Us</Link></li>
@@ -36,7 +36,7 @@ const Footer = () => {
           </ul>
         </div>
         <div>
-          <h6 className='font-medium text-gray-400'>Company</h6>
+          <h1 className='font-medium text-gray-400'>Company</h1>
           <ul>
             <li className='py-2 text-sm'><Link href='/'>Home</Link></li>
             <li className='py-2 text-sm'><Link href='/Services'>Services</Link></li>
@@ -44,7 +44,7 @@ const Footer = () => {
           </ul>
         </div>
         <div>
-          <h6 className='font-medium text-gray-400'>Legal</h6>
+          <h1 className='font-medium text-gray-400'>Legal</h1>
           <ul>
             <li className='py-2 text-sm'><Link href='/Privacy'>Privacy</Link></li>
           </ul>
